@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Lusitana&family=Noto+Sans+TC&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  scroll-behavior: smooth;
+  transition: 0.3s ease-in-out;
+  font-family: "Baloo 2", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  letter-spacing: 0.2rem;
+}
+
+* button {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+#Home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Home .card {
+  width: 30%;
+  height: 50vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
+}
+#Home .card .hello {
+  font-size: 2rem;
+}
+#Home .card .login {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#Home .card .login label {
+  font-size: 1.3rem;
+}
+#Home .card .login input {
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+#Home .card .login-button {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding: 0.5rem 3rem;
+  border-radius: 20px;
+  border: 0px;
+  background-color: rgb(249, 155, 181);
+  color: white;
+}
+#Home .card .register {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+#Home .card .register p {
+  margin-right: 1rem;
+}
+#Home .card .register button {
+  font-size: 1.2rem;
+  background-color: white;
+  border: 0px;
+  border-bottom: 1px solid rgb(255, 109, 150);
+}
+#Home .footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+#Register {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Register .card {
+  width: 30%;
+  height: 60vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
+}
+#Register .card .hello {
+  font-size: 2rem;
+}
+#Register .card .data {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#Register .card .data label {
+  font-size: 1.3rem;
+}
+#Register .card .data input {
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+#Register .card .register {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding: 0.5rem 3rem;
+  border-radius: 20px;
+  border: 0px;
+  background-color: rgb(249, 155, 181);
+  color: white;
+}
+#Register .card .login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+#Register .card .login p {
+  margin-right: 1rem;
+}
+#Register .card .login button {
+  font-size: 1.2rem;
+  background-color: white;
+  border: 0px;
+  border-bottom: 1px solid rgb(255, 109, 150);
+}
+#Register .footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+#ShopPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ShopPage .card {
+  width: 30%;
+  height: 30vh;
+  margin-top: 4rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
+}
+#ShopPage .card h1 {
+  font-size: 3rem;
+}
+#ShopPage .card p {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+#ShopPage .card .shopdata-p {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+#ShopPage .card .button {
+  margin-top: 1rem;
+}
+#ShopPage .card .button button {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding: 0.5rem 2rem;
+  margin: 0rem 1rem;
+  border-radius: 20px;
+  border: 0px;
+  background-color: rgb(249, 155, 181);
+  color: white;
+}
+#ShopPage .reverse-title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 3rem 0 2rem 0;
+}
+#ShopPage .reverse-div {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
+}
+#ShopPage .reverse-div .reverse-card {
+  width: 90%;
+  height: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#ShopPage .reverse-div .reverse-card .display {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  background-color: rgba(218, 66, 188, 0.719);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: all 2s ease-in-out;
+  cursor: pointer;
+}
+#ShopPage .reverse-div .reverse-card .display .arow {
+  position: absolute;
+  right: 3%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+#ShopPage .reverse-div .reverse-card .display .display-p {
+  margin: 0 2rem;
+}
+#ShopPage .reverse-div .reverse-card .display .display-p p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+}
+#ShopPage .reverse-div .reverse-card .visible {
+  width: 100%;
+}
+#ShopPage .reverse-div .reverse-card .visible .other .other-p {
+  display: flex;
+  font-size: 1.3rem;
+}
+#ShopPage .reverse-div .reverse-card .visible .other .other-p p {
+  margin: 0 1rem;
+}
+#ShopPage .reverse-div .reverse-card .hiden {
+  display: none;
+}
+#ShopPage .footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+#setting {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#setting .card {
+  width: 30%;
+  height: 60vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
+}
+#setting .card .hello {
+  font-size: 2rem;
+  margin-bottom: -1rem;
+}
+#setting .card .data {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#setting .card .data label {
+  font-size: 1.3rem;
+}
+#setting .card .data input {
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+#setting .card .button {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding: 0.5rem 3rem;
+  border-radius: 20px;
+  border: 0px;
+}
+#setting .card .button p {
+  margin-right: 1rem;
+}
+#setting .card .button button {
+  margin: 0 1rem;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding: 0.5rem 4rem;
+  border-radius: 20px;
+  border: 0px;
+  background-color: rgb(249, 155, 181);
+  color: white;
+}
+#setting .card .button .back {
+  padding: 0.5rem 2rem;
+}
+#setting .footer {
+  position: absolute;
+  bottom: 10px;
+}/*# sourceMappingURL=style.css.map */
