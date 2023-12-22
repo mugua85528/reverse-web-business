@@ -1,10 +1,10 @@
 import axios from "axios";
-// const API_URL = "https://sideprojectreverseweb.onrender.com/api/shop/";
-const API_URL = "http://127.0.0.1:8080/api/shop/";
+const API_URL = "https://sideprojectreverseweb.onrender.com/api/shop/";
+// const API_URL = "http://127.0.0.1:8080/api/shop/";
 
 class ShopService {
   getReversed() {
-    return axios.get("http://127.0.0.1:8080/api/");
+    return axios.get("https://sideprojectreverseweb.onrender.com/api/");
   }
 
   getShopData() {

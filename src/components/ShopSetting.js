@@ -7,6 +7,7 @@ function ShopSetting({ shopData, setShopData }) {
   const [shopName, setShopName] = useState("");
   const [startTime, setStartTime] = useState("");
   const [endTime, setEndTime] = useState("");
+  const [message, setMessage] = useState("");
   const nameHandler = (e) => {
     setShopName(e.target.value);
   };
@@ -25,7 +26,7 @@ function ShopSetting({ shopData, setShopData }) {
         navigate("/shop-page");
       })
       .catch((e) => {
-        console.log(e.response.data);
+        setMessage(e.response.data);
       });
   };
   const backHandler = () => {
@@ -36,7 +37,7 @@ function ShopSetting({ shopData, setShopData }) {
   };
 
   return (
-    <div id="setting">
+    <div id="Setting">
       <div className="card">
         <p className="hello">更改資料</p>
         <div className="data">
@@ -47,6 +48,11 @@ function ShopSetting({ shopData, setShopData }) {
           <label name="endTime">最後營業時間</label>
           <input onChange={endHandler} name="endTime" type="text" />
         </div>
+        {message && (
+          <div className="message">
+            <p>{message}</p>
+          </div>
+        )}
         <div className="button">
           <button className="setting" onClick={buttonHandler}>
             設定

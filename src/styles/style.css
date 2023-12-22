@@ -28,8 +28,8 @@
   align-items: center;
 }
 #Home .card {
-  width: 30%;
-  height: 50vh;
+  width: 35rem;
+  height: 30rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -52,6 +52,15 @@
   padding: 0.3rem;
   margin-bottom: 1rem;
 }
+#Home .card .message {
+  width: 100%;
+  background-color: rgb(245, 108, 108);
+  color: white;
+  text-align: center;
+  padding: 0.2rem 0rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
 #Home .card .login-button {
   font-size: 1.1rem;
   font-weight: bolder;
@@ -64,6 +73,7 @@
 #Home .card .register {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   font-size: 1.2rem;
 }
@@ -89,8 +99,8 @@
   align-items: center;
 }
 #Register .card {
-  width: 30%;
-  height: 60vh;
+  width: 35rem;
+  height: 35rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -113,6 +123,15 @@
   padding: 0.3rem;
   margin-bottom: 1rem;
 }
+#Register .card .message {
+  width: 100%;
+  background-color: rgb(245, 108, 108);
+  color: white;
+  text-align: center;
+  padding: 0.2rem 0rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
 #Register .card .register {
   font-size: 1.1rem;
   font-weight: bolder;
@@ -125,6 +144,7 @@
 #Register .card .login {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   font-size: 1.2rem;
 }
@@ -149,8 +169,8 @@
   align-items: center;
 }
 #ShopPage .card {
-  width: 30%;
-  height: 30vh;
+  width: 38rem;
+  height: 20rem;
   margin-top: 4rem;
   padding: 2rem;
   display: flex;
@@ -190,7 +210,7 @@
   margin: 3rem 0 2rem 0;
 }
 #ShopPage .reverse-div {
-  width: 50%;
+  width: 60rem;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -252,16 +272,16 @@
   bottom: 10px;
 }
 
-#setting {
+#Setting {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#setting .card {
-  width: 30%;
-  height: 60vh;
+#Setting .card {
+  width: 35rem;
+  height: 35rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -269,33 +289,42 @@
   justify-content: space-around;
   box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
 }
-#setting .card .hello {
+#Setting .card .hello {
   font-size: 2rem;
   margin-bottom: -1rem;
 }
-#setting .card .data {
+#Setting .card .data {
   width: 70%;
   display: flex;
   flex-direction: column;
 }
-#setting .card .data label {
+#Setting .card .data label {
   font-size: 1.3rem;
 }
-#setting .card .data input {
+#Setting .card .data input {
   padding: 0.3rem;
   margin-bottom: 1rem;
 }
-#setting .card .button {
+#Setting .card .message {
+  width: 100%;
+  background-color: rgb(245, 108, 108);
+  color: white;
+  text-align: center;
+  padding: 0.2rem 0rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+#Setting .card .button {
   font-size: 1.1rem;
   font-weight: bolder;
   padding: 0.5rem 3rem;
   border-radius: 20px;
   border: 0px;
 }
-#setting .card .button p {
+#Setting .card .button p {
   margin-right: 1rem;
 }
-#setting .card .button button {
+#Setting .card .button button {
   margin: 0 1rem;
   font-size: 1.1rem;
   font-weight: bolder;
@@ -305,10 +334,152 @@
   background-color: rgb(249, 155, 181);
   color: white;
 }
-#setting .card .button .back {
+#Setting .card .button .back {
   padding: 0.5rem 2rem;
 }
-#setting .footer {
+#Setting .footer {
   position: absolute;
   bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  #ShopPage .reverse-div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #Home .card {
+    width: 70%;
+  }
+  #Home .card .hello {
+    text-align: center;
+  }
+  #Register .card {
+    width: 70%;
+  }
+  #Register .card .hello {
+    text-align: center;
+  }
+  #ShopPage .card {
+    width: 80%;
+    height: 18rem;
+  }
+  #ShopPage .card h1 {
+    font-size: 2rem;
+  }
+  #ShopPage .card .shopdata-p {
+    width: 17rem;
+  }
+  #ShopPage .card .button {
+    display: flex;
+    flex-direction: column;
+  }
+  #ShopPage .card .button button {
+    margin: 0.5rem 0rem;
+  }
+  #ShopPage .reverse-div .reverse-card .display {
+    flex-direction: column;
+  }
+  #ShopPage .reverse-div .reverse-card .display .display-p p {
+    font-size: 1.3rem;
+  }
+  #ShopPage .reverse-div .reverse-card .visible {
+    width: 100%;
+  }
+  #ShopPage .reverse-div .reverse-card .visible .other .other-p {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  #ShopPage .reverse-div .reverse-card .visible .other .other-p p {
+    margin: 0rem 0rem;
+  }
+  #Setting .card {
+    width: 70%;
+  }
+  #Setting .card .hello {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+  }
+  #Setting .card .data {
+    width: 100%;
+  }
+  #Setting .card .message {
+    margin-top: 1rem;
+  }
+  #Setting .card .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #Setting .card .button .setting {
+    width: 12rem;
+  }
+  #Setting .card .button .back {
+    width: 80%;
+  }
+  #Setting .card .button button {
+    margin: 0.5rem 0rem;
+    padding: 0.5rem 2.9rem;
+  }
+  #Setting .card .button .back {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 425px) {
+  * input {
+    letter-spacing: 0.1rem;
+  }
+  #Home .card .hello {
+    font-size: 1rem;
+  }
+  #Home .card .login {
+    width: 100%;
+  }
+  #Home .card .login label {
+    font-size: 1rem;
+  }
+  #Home .card .login-button {
+    font-size: 1rem;
+  }
+  #Register .card .hello {
+    font-size: 1rem;
+  }
+  #Register .card .data {
+    width: 100%;
+  }
+  #Register .card .data label {
+    font-size: 1rem;
+  }
+  #Register .card .register {
+    font-size: 1rem;
+  }
+  #Register .card .login {
+    font-size: 1rem;
+  }
+  #ShopPage .card p {
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+  }
+  #ShopPage .reverse-title {
+    font-size: 1.3rem;
+  }
+  #ShopPage .reverse-div .reverse-card {
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+  }
+  #ShopPage .reverse-div .reverse-card .display .display-p p {
+    font-size: 1rem;
+  }
+  #Setting .card {
+    width: 85%;
+  }
+  #Setting .card .hello {
+    margin-bottom: 1rem;
+  }
+  #Setting .card .data label {
+    font-size: 1rem;
+  }
+  #Setting .card .message {
+    margin-top: 0rem;
+  }
 }/*# sourceMappingURL=style.css.map */

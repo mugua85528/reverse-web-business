@@ -46,7 +46,11 @@ function Home({ setShopData }) {
             onChange={passwordHandler}
           />
         </div>
-        {message && <p>{message}</p>}
+        {message && (
+          <div className="message">
+            <p>{message}</p>
+          </div>
+        )}
         <button className="login-button" onClick={loginHandler}>
           登入
         </button>

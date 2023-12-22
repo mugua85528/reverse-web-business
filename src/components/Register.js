@@ -57,7 +57,11 @@ function Register(props) {
             onChange={passwordHandler}
           />
         </div>
-        {message && <p>{message}</p>}
+        {message && (
+          <div className="message">
+            <p>{message}</p>
+          </div>
+        )}
         <button className="register" onClick={registerHandler}>
           註冊
         </button>
